@@ -1,0 +1,126 @@
+/*------------------------------------------------------------SLIDER PROJETOS------------------------------------------------------------*/  
+
+.slider-wrapper-projetos {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-projetos {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.slider-projetos::-webkit-scrollbar {
+    display: none;
+}
+
+.card-projetos {
+    min-width: 300px;
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Título dos projetos */
+.card-projetos h3 {
+    font-size: 20px;  /* Tamanho reduzido */
+    color: #a97bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Descrição dos projetos */
+.card-projetos p {
+    font-size: 14px;  /* Tamanho ajustado para uma leitura mais confortável */
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Link dos projetos */
+.card-projetos a {
+    color: #00bcd4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card-projetos a:hover {
+    color: #fff;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#prev-btn {
+    left: -50px;
+}
+#next-btn {
+    right: -50px;
+}
+
+/* Estilizando o card de cada repositório */
+.repo-card {
+    background-color: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;  /* Organiza os itens na vertical */
+    justify-content: space-between;  /* Garante que o título, descrição e link fiquem separados */
+    width: 300px;
+    height: 300px;  /* Define uma altura fixa para que o conteúdo seja bem distribuído */
+}
+
+.repo-card h3 {
+    font-size: 20px;  /* Ajuste o tamanho do título */
+    color: #a97bff;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;  /* Centraliza o título */
+}
+
+.repo-card p {
+    font-size: 14px;
+    margin-bottom: 15px;  /* Espaço entre a descrição e o link */
+    color: #f0f0f0;
+    flex-grow: 1;  /* Faz com que a descrição ocupe o espaço disponível entre o título e o link */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo-card a {
+    color: #00bcd4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.repo-card a:hover {
+    color: #fff;
+}
+
+/*------------------------------------------------------------FIM SLIDER PROJETOS------------------------------------------------------------*/  

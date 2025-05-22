@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">    
+    <script src="js/github.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#linguagens">Linguagens</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="foto-wrapper">
+                <div class="borda-animada">
+                    <div class="borda-interna"></div>
+                </div>
+                    <img class="foto" src="img/Foto-Thiogo.jpg" alt="Minha Foto">
+            </div>
+            <div class="typing-container">
+                <h1>Sobre Mim</h1>
+                <p class="typing">
+                    <span>Olá! Sou apaixonado por tecnologia e desenvolvimento de software.</span>
+                    <span>Estou cursando superior em Engenharia de Software...</span>
+                    <span>Atualmente, trabalho como Estagiário Dev Full-Stack na Uniplast.</span>
+                    <span>Estou sempre em busca de novos desafios e oportunidades.</span>
+                    <span>Altamente comprometido com a qualidade, inovação e aprendizado contínuo.</span>
+                </p>
+            </div>
+            
+                <div class="redes-sociais">
+                    <a href="https://github.com/ThiogoGambeta" target="_blank">
+                        <img src="img/Logos/Logo-Github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/thiogogambeta" target="_blank">
+                        <img src="img/Logos/Logo-Linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/thgambeta" target="_blank">
+                        <img src="img/Logos/Logo-Instagram.png" alt="Instagram">
+                    </a>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+    <div class="container">
+        <h2>Meus Projetos</h2>
+        <div class="slider-wrapper-projetos">
+            <button id="prev-btn" class="slider-btn">◀</button>
+            <div class="slider-projetos" id="repos-container">
+                <!-- Os repositórios do GitHub serão inseridos aqui pelo javascript -->
+            </div>
+            <button id="next-btn" class="slider-btn">▶</button>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <section id="linguagens" class="linguagens">
+        <div class="container">
+            <h2>Linguagens que tenho Conhecimento</h2>
+            <div class="carrossel-linguagens">
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-Html5.png" alt="HTML5">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-Css3.png" alt="CSS3">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-JavaScript.png" alt="JavaScript">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-Java.png" alt="PHP">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-MySql.png" alt="PHP">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-Php.png" alt="PHP">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-PostGree.png" alt="PHP">
+                </div>
+                <div class="slide-linguagens">
+                    <img src="img/Logos/Logo-Python.png" alt="PHP">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contato" class="contato">
+        <div class="container" style="text-align: center;">
+            <h2>Contato</h2>
+            <p>Email: thiogogambeta@gmail.com</p>
+        </div>
+        <button id="btn-contato">Entrar em contato</button>
+
+    <div id="modal-contato" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="form-contato">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    </section>
+    <script src="js/contato.js"></script>
+</body>
+</html>
+
