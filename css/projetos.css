@@ -4,8 +4,6 @@
     position: relative;
     width: 100%;
     padding: 20px 0;
-    margin-top: 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -13,8 +11,9 @@
 .slider-projetos {
     display: flex;
     gap: 20px;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-behavior: smooth;
+    padding: 10px;
 }
 
 .slider-projetos::-webkit-scrollbar {
@@ -91,6 +90,9 @@
     justify-content: space-between;  /* Garante que o título, descrição e link fiquem separados */
     width: 300px;
     height: 300px;  /* Define uma altura fixa para que o conteúdo seja bem distribuído */
+    min-width: 300px;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .repo-card h3 {
@@ -123,4 +125,24 @@
     color: #fff;
 }
 
+.slider-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .repo-card {
+        min-width: 85%;
+    }
+    .slider-btn {
+        display: none;
+    }
+}
 /*------------------------------------------------------------FIM SLIDER PROJETOS------------------------------------------------------------*/  

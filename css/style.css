@@ -16,49 +16,74 @@ body {
     color: #f0f0f0;
 }
 
-/* Responsividade geral */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0a0a0a;
+        color: #f0f0f0;
+    }
+
+    .navbar{
+        width: 100%;
+    }
     .navbar ul {
-        flex-direction: column;
-        gap: 20px;
-    }
+    gap: 20px;
+  }
 
-    .carrossel-linguagens {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .typing-container {
+    font-size: 0.8em;
+}
+  .slider-wrapper-projetos {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-    .card-projetos,
-    .repo-card {
-        min-width: 90%;
-        width: 90%;
-    }
+  .slider-projetos {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+  }
 
-    .slider-btn {
-        display: none;
-    }
+  .card-projetos,
+  .repo-card {
+    min-width: 85%;
+    width: 85%;
+    scroll-snap-align: start;
+  }
 
-    .container {
-        padding: 20px 10px;
-    }
+  .foto-wrapper {
+    width: 150px;
+    height: 150px;
+  }
 
-    .foto-wrapper {
-        width: 150px;
-        height: 150px;
-    }
+  .foto {
+    width: 130px;
+    height: 130px;
+  }
 
-    .foto {
-        width: 130px;
-        height: 130px;
-    }
+  .modal-content {
+    width: 95%;
+    margin: 20% auto;
+  }
 
-    #btn-contato {
-        width: 90%;
-        margin: 20px auto;
-    }
+  .carrossel-linguagens {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
 
-    .modal-content {
-        width: 95%;
-        margin-top: 30%;
-    }
+  .slide-linguagens {
+    min-width: 80px;
+  }
+
+  .slider-btn {
+    display: none;
+  }
+  .linguagens{
+    width: 100%;
+    margin-left: 12px;
+  }
 }
