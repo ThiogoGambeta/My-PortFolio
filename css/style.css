@@ -15,3 +15,50 @@ body {
     background-color: #0a0a0a;
     color: #f0f0f0;
 }
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carrossel-linguagens {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .card-projetos,
+    .repo-card {
+        min-width: 90%;
+        width: 90%;
+    }
+
+    .slider-btn {
+        display: none;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .foto-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    .foto {
+        width: 130px;
+        height: 130px;
+    }
+
+    #btn-contato {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin-top: 30%;
+    }
+}
