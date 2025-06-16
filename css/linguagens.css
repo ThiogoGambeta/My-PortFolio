@@ -1,11 +1,13 @@
 /*------------------------------------------------------------LINGUAGENS------------------------------------------------------------*/  
 
 .linguagens {
-    padding: 0px 0;
+    padding: 10px 0;
     background-color: #1a1a2e;
     color: #fff;
     text-align: center;
     width: 100%;
+    height: 350px;
+    margin-bottom: -550px;
 
 }
 
@@ -14,6 +16,7 @@
     overflow: hidden;
     justify-content: center;
     gap: 20px;
+    padding: 50px;
 }
 
 .slide-linguagens {
@@ -28,4 +31,7 @@
     padding: 10px;
 }
 
+.container-linguagens{
+    margin-top: 0px;
+}
 /*------------------------------------------------------------FIM LINGUAGENS------------------------------------------------------------*/  

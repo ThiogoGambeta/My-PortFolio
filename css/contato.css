@@ -70,7 +70,7 @@
 /* Botão de abrir modal */
 #btn-contato {
     display: block;
-    margin: -40px auto 40px;
+    margin: -10px auto 40px;
     padding: 10px 20px;
     background-color: #a97bff;
     color: white;
@@ -81,3 +81,6 @@
     width: 200px;
 }
 
+.container-contato {
+    margin-top: 750px;
+}
