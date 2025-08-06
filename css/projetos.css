@@ -93,6 +93,9 @@
     min-width: 300px;
     flex-shrink: 0;
     text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .repo-card h3 {
