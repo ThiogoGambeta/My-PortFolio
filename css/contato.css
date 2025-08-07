@@ -69,18 +69,34 @@
 
 /* Botão de abrir modal */
 #btn-contato {
-    display: block;
-    margin: -10px auto 40px;
-    padding: 10px 20px;
     background-color: #a97bff;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    width: 200px;
+    width: 100px;
+    height: 60px;
 }
 
 .container-contato {
     margin-top: 750px;
+}
+.botoes{
+    margin-bottom: 1%;
+    gap: 30px;
+    display: flex;
+    justify-content: center; /* Centralizar na tela */
+    flex-wrap: wrap; /* Permite quebrar em telas pequenas */
+    margin-top: 20px;
+}
+.btn-baixar {
+    background-color: #a97bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    height: 60px;
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/style.css">    
-    <script src="js/github.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body id="sobre">
@@ -20,42 +19,55 @@
 <div id="sobre"></div>
 
 
-    <section class="sobre">
-        <div class="container-sobre">
-            <div class="foto-wrapper">
-                <div class="borda-animada">
-                    <div class="borda-interna"></div>
-                </div>
-                    <img class="foto" src="img/Foto-Thiogo.jpg" alt="Minha Foto">
-            </div>
-            <div class="typing-container">
-                <h1>Sobre Mim</h1>
-                <p class="typing">
-                    <span>Olá! Sou apaixonado por tecnologia e desenvolvimento de software.</span>
-                    <span>Estou cursando superior em Engenharia de Software...</span>
-                    <span>Atualmente, trabalho como Estagiário Dev Full-Stack na Uniplast.</span>
-                    <span>Estou sempre em busca de novos desafios e oportunidades.</span>
-                    <span>Altamente comprometido com a qualidade, inovação e aprendizado contínuo.</span>
-                </p>
-            </div>
-            
-                <div class="redes-sociais">
-                    <a href="https://github.com/ThiogoGambeta" target="_blank">
-                        <img src="img/Logos/Logo-Github.png" alt="GitHub">
-                    </a>
-                    <a href="https://www.linkedin.com/in/thiogogambeta" target="_blank">
-                        <img src="img/Logos/Logo-Linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.instagram.com/thgambeta" target="_blank">
-                        <img src="img/Logos/Logo-Instagram.png" alt="Instagram">
-                    </a>
-            </div>
+    <section id="sobre" class="sobre">
+    <div class="container-sobre">
 
-            </div>
+      <!-- Esquerda: Texto -->
+      <div class="typing-container">
+        <h1>Sobre Mim</h1>
+        <p class="fixed-text">
+            Olá! Sou apaixonado por tecnologia e desenvolvimento de software<br>
+            Estou cursando superior em Engenharia de Software<br>
+            Atualmente, trabalho como Estagiário Dev Full-Stack na Uniplast.<br>
+            Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente<br>
+            Altamente comprometido com a qualidade, inovação e aprendizado contínuo.
+        </p>
+
+        <div class="redes-sociais">
+          <a href="https://github.com/ThiogoGambeta" target="_blank">
+            <img src="img/Logos/Logo-Github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/thiogogambeta" target="_blank">
+            <img src="img/Logos/Logo-Linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.instagram.com/thgambeta" target="_blank">
+            <img src="img/Logos/Logo-Instagram.png" alt="Instagram">
+          </a>
         </div>
-    </section>
+      </div>
 
-    <section id="projetos" class="projetos">
+      <!-- Direita: Foto e efeito digitando -->
+      <div class="foto-wrapper">
+        <div class="borda-animada">
+          <div class="borda-interna"></div>
+        </div>
+        <img class="foto" src="img/Foto-Thiogo.jpg" alt="Minha Foto">
+        <div class="nome-digitando">
+          <span class="fixo">Olá! Eu sou<br> </span>
+          <span class="variavel" id="textoAnimado"></span><span class="cursor">ㅤ</span>
+        </div>
+        <script src="js/sobre.js"></script>
+        <div class="quote">
+            <div id="projetos"></div>
+            <p>“A linguagem não define o programador. Sua lógica sim.”</p>
+          <cite>- Thiogo Gambeta</cite>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+    <section class="projetos">
     <div class="container">
         <h2>Meus Projetos</h2>
         <div class="slider-wrapper-projetos">
@@ -109,7 +121,21 @@
             <h2>Contato</h2>
             <p>Email: thiogogambeta@gmail.com</p>
         </div>
+        <div class="botoes">
         <button id="btn-contato">Entrar em contato</button>
+        
+        <button onclick="baixarCurriculo()" class="btn-baixar">Baixar Curriculo</button>
+        <script>
+        function baixarCurriculo() {
+        const link = document.createElement('a');
+        link.href = 'docs/Curriculo-Thiogo-Gambeta.pdf';
+        link.setAttribute('download', 'Curriculo-Thiogo-Gambeta.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        }
+  </script>
+  </div>
 
     <div id="modal-contato" class="modal">
         <div class="modal-content">

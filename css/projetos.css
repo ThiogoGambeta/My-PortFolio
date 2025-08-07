@@ -1,11 +1,20 @@
 /*------------------------------------------------------------SLIDER PROJETOS------------------------------------------------------------*/  
-
+.container h2{
+    margin-top: 10%;
+    margin-left: 22%;
+    margin-bottom: 5%;
+}
 .slider-wrapper-projetos {
     position: relative;
-    width: 108%;
+    width: 80%;
     padding: 50px 0;
     justify-content: center;
     align-items: center;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1090px;
+    margin: 0 auto;
 }
 
 .slider-projetos {

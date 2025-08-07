@@ -32,24 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', () => {
         container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-});
-/*=============================SOBRE MIM TEXTO AUTOMATICO=============================*/
-
-function resetTypingAnimation() {
-    const spans = document.querySelectorAll('.typing span');
-    spans.forEach(span => {
-        span.style.opacity = 0;
-    });
-
-    spans.forEach((span, index) => {
-        setTimeout(() => {
-            span.style.opacity = 1;
-            span.style.transform = 'translateY(0)';
-        }, index * 1000); // mesmo tempo dos delays no CSS
-    });
-}
-
-    // Inicia e repete a cada 10 segundos (ajuste conforme necessário)
-resetTypingAnimation();
-setInterval(resetTypingAnimation, 100);
-
+}); 

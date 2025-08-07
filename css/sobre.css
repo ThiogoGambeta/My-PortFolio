@@ -1,128 +1,74 @@
-/*------------------------------------------------------------FOTO------------------------------------------------------------*/  
-
-.container{
-    padding: 200px 20px;
-    max-width: 1000px;
-    margin: auto;
+.sobre {
+  padding: 80px 0;
 }
 
-.foto-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    margin-top: 3%;
+.container-sobre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
-.borda-animada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg, #a97bff, #1a1a2e, #a97bff);
-    animation: spin 5s linear infinite;
-    z-index: 1;
+.typing-container {
+  flex: 1 1 50%;
+  padding-right: 40px;
 }
 
-.borda-interna {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg, #a97bff, #1a1a2e, #9c68fc #1a1a2e);
+.typing-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #bd87ff;
 }
 
-.foto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    z-index: 2;
-}
-
-/* Animação de rotação */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/*------------------------------------------------------------FIM FOTO------------------------------------------------------------*/  
-
-/*------------------------------------------------------------SOBRE MIM E REDES SOCIAIS------------------------------------------------------------*/  
-
-.card {
-    background-color: #1c1c3a;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px #000;
-    transition: transform 0.3s;
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.card:hover {
-    transform: scale(1.03);
+.typing {
+  font-size: 18px;
+  line-height: 1.8;
+  min-height: 140px;
 }
 
 .redes-sociais {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  margin-top: 20px;
 }
 
 .redes-sociais a img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease, filter 0.3s ease;
+  width: 32px;
+  margin-right: 15px;
+  transition: transform 0.3s;
 }
 
 .redes-sociais a img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-}
-/*========================TEXTO SOBRE MIM========================*/
-.typing-container {
-    text-align: center;
-    font-size: 1.8em;
-    color: #f0f0f0;
-    font-weight: normal;
-    line-height: 1.6;
+  transform: scale(1.1);
 }
 
-.typing span {
-    display: block;
-    opacity: 0;
-    animation: typingFade 0.8s ease forwards;
+.foto-wrapper {
+  flex: 1 1 40%;
+  text-align: center;
+  position: relative;
 }
 
-.typing span:nth-child(1) { animation-delay: 0s; }
-.typing span:nth-child(2) { animation-delay: 1s; }
-.typing span:nth-child(3) { animation-delay: 2s; }
-.typing span:nth-child(4) { animation-delay: 3s; }
-.typing span:nth-child(5) { animation-delay: 4s; }
-
-@keyframes typingFade {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.foto {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4f2286;
+  margin-bottom: 15px;
 }
-/*------------------------------------------------------------FIM SOBRE MIM E REDES SOCIAIS------------------------------------------------------------*/  
+
+.fixo {
+  font-size: 28px;
+  color: #bd87ff;
+  font-weight: bold;
+}
+.variavel {
+  font-size: 24px;
+  color: #fff;
+}
+
+cite {
+  font-size: 14px;
+  color: #999;
+}
