@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     // BOTÕES DE SCROLL
-    const scrollAmount = 320;
+    const scrollAmount = 360;
 
     nextBtn.addEventListener('click', () => {
         container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
