@@ -88,7 +88,7 @@ body {
   }
 
   .container-sobre{
-    margin-top: 10%;
+    flex-direction: column-reverse;
   }
 
   .navbar ul {
@@ -253,3 +253,4 @@ body {
 }
 
 }
+
