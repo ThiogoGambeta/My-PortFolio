@@ -1,160 +1,138 @@
-/*------------------------------------------------------------SLIDER PROJETOS------------------------------------------------------------*/  
-.container h2{
+/*------------------------------------------------------------PROJETOS - LAYOUT ALTERNADO (BLOCO LATERAL)------------------------------------------------------------*/
+
+/* O container principal da seção */
+.projetos {
     margin-top: 10%;
-    margin-left: 22%;
-    margin-bottom: 5%;
-}
-.slider-wrapper-projetos {
-    position: relative;
-    width: 80%;
-    padding: 50px 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    max-width: 1090px;
-    margin: 0 auto;
-}
-
-.slider-projetos {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px;
-}
-
-.slider-projetos::-webkit-scrollbar {
-    display: none;
-}
-
-.card-projetos {
-    min-width: 300px;
+    padding: 80px 0;
     background-color: #1a1a2e;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 
-/* Título dos projetos */
-.card-projetos h3 {
-    font-size: 20px;  /* Tamanho reduzido */
+.container h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* Container de Projetos: Aumenta a largura total para permitir o layout lateral */
+.projetos-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 60px; 
+    max-width: 1100px; /* Aumenta a largura máxima para dar espaço ao movimento lateral */
+    margin: 0 auto; /* Mantém o container principal centralizado */
+    padding: 0 20px;
+}
+
+/* Estilo Base do Cartão de Projeto */
+.repo-card {
+    display: block; 
+    
+    max-width: 500px; /* IMPORTANTE: Define a largura do bloco para ele poder flutuar */
+    width: 100%; 
+    
+    background-color: #212136; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
+    
+    transition: transform 0.3s ease-in-out;
+    
+    /* Padrão (Projeto ímpar, LADO ESQUERDO) */
+    margin-right: auto; /* Empurra o bloco para a esquerda */
+    margin-left: 0; 
+
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.repo-card:hover {
+    transform: translateY(-5px); 
+}
+
+/* ------------------- EFEITO DE INVERSÃO (LADO DIREITO) ------------------- */
+/* Aplicado nos cards pares pelo JavaScript (classe .inverte) */
+.repo-card.inverte {
+    /* Alinha o bloco à direita */
+    margin-left: auto; /* Empurra o bloco para a direita */
+    margin-right: 0; 
+
+    text-align: right; /* Alinha o texto dentro do card à direita */
+}
+
+/* ------------------- ESTILOS DE CONTEÚDO ------------------- */
+.projeto-conteudo h3 {
+    font-size: 1.8rem;
     color: #a97bff;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-/* Descrição dos projetos */
-.card-projetos p {
-    font-size: 14px;  /* Tamanho ajustado para uma leitura mais confortável */
-    margin-bottom: 20px;
+.projeto-conteudo p {
+    font-size: 1rem;
+    line-height: 1.6;
     color: #f0f0f0;
+    margin-bottom: 30px;
 }
 
-/* Link dos projetos */
-.card-projetos a {
-    color: #00bcd4;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.card-projetos a:hover {
-    color: #fff;
-}
-
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    background: #222;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-#prev-btn {
-    left: -50px;
-}
-#next-btn {
-    right: -50px;
-}
-
-/* Estilizando o card de cada repositório */
-.repo-card {
-    background-color: #1a1a2e;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+/* Container dos Botões */
+.projeto-links {
     display: flex;
-    flex-direction: column;  /* Organiza os itens na vertical */
-    justify-content: space-between;  /* Garante que o título, descrição e link fiquem separados */
-    width: 300px;
-    height: 300px;  /* Define uma altura fixa para que o conteúdo seja bem distribuído */
-    min-width: 300px;
-    flex-shrink: 0;
-    text-align: center;
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-break: break-word;
+    gap: 15px;
+    justify-content: flex-start; /* Alinha os botões à esquerda (padrão) */
 }
 
-.repo-card h3 {
-    font-size: 20px;  /* Ajuste o tamanho do título */
-    color: #a97bff;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;  /* Centraliza o título */
+/* Alinha os botões à direita no modo invertido */
+.repo-card.inverte .projeto-links {
+    justify-content: flex-end;
 }
 
-.repo-card p {
-    font-size: 14px;
-    margin-bottom: 15px;  /* Espaço entre a descrição e o link */
-    color: #f0f0f0;
-    flex-grow: 1;  /* Faz com que a descrição ocupe o espaço disponível entre o título e o link */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.repo-card a {
-    color: #00bcd4;
-    font-weight: bold;
+/* Estilos de Botão */
+.btn {
+    padding: 12px 25px;
+    background-color: #00bcd4;
+    color: #1a1a2e;
     text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-}
-
-.repo-card a:hover {
-    color: #fff;
-}
-
-.slider-btn {
-    background: #222;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
     border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #00bcd4;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #00bcd4;
 }
 
 
-
-@media (max-width: 768px) {
+/* ------------------- RESPONSIVIDADE ------------------- */
+@media (max-width: 850px) { 
+    .projetos-grid {
+        max-width: 600px; 
+    }
+    
     .repo-card {
-        min-width: 85%;
+        padding: 20px;
+        max-width: 100%; 
+        
+        /* Remove o alinhamento lateral em telas pequenas, centraliza o BLOCO */
+        margin-left: auto;
+        margin-right: auto;
+        
+        text-align: center; /* Centraliza o texto */
     }
-    .slider-btn {
-        display: none;
+
+    /* Garante que o alinhamento invertido seja centralizado em telas pequenas */
+    .repo-card.inverte {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .projeto-links,
+    .repo-card.inverte .projeto-links {
+        justify-content: center; /* Centraliza os botões em telas menores */
     }
 }
-/*------------------------------------------------------------FIM SLIDER PROJETOS------------------------------------------------------------*/  
+/*------------------------------------------------------------FIM PROJETOS - LAYOUT ALTERNADO (BLOCO LATERAL)------------------------------------------------------------*/

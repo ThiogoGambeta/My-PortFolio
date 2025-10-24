@@ -14,13 +14,17 @@
 
 .typing-container {
   flex: 1 1 50%;
-  padding-right: 40px;
+  margin-left: -20%;
 }
 
 .typing-container h1 {
-  font-size: 36px;
+  font-size: 86px;
   margin-bottom: 20px;
   color: #bd87ff;
+}
+
+.typing-container .fixed-text{
+  font-size: 20px;
 }
 
 .typing {
@@ -47,6 +51,7 @@
   flex: 1 1 40%;
   text-align: center;
   position: relative;
+  margin-right: -25%;
 }
 
 .foto {

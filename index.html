@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">    
-    <script src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
+
 <body id="sobre">
 
-<nav class="navbar" >
+  <nav class="navbar">
     <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#linguagens">Linguagens</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <li><a href="#sobre">Sobre Mim</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#linguagens">Linguagens</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
-</nav>
-<div id="sobre"></div>
+  </nav>
+  <div id="sobre"></div>
 
 
-    <section id="sobre" class="sobre">
+  <section id="sobre" class="sobre">
     <div class="container-sobre">
 
       <!-- Esquerda: Texto -->
       <div class="typing-container">
         <h1>Sobre Mim</h1>
         <p class="fixed-text">
-            Olá! Sou apaixonado por tecnologia e desenvolvimento de software<br>
-            Estou cursando superior em Engenharia de Software<br>
-            Atualmente, trabalho como Estagiário Dev Full-Stack na Uniplast.<br>
-            Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente<br>
-            Altamente comprometido com a qualidade, inovação e aprendizado contínuo.
+          Olá! Sou apaixonado por tecnologia e desenvolvimento de software<br>
+          Estou cursando superior em Engenharia de Software<br>
+          Atualmente, trabalho como Estagiário Dev Full-Stack na Uniplast.<br>
+          Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente<br>
+          Altamente comprometido com a qualidade, inovação e aprendizado contínuo.
         </p>
 
         <div class="redes-sociais">
-          <a href="https://github.com/ThiogoGambeta" target="_blank">
+          <a href="https://github.com/ThiogoGambeta" style="text-decoration: none;" target="_blank">
             <img src="img/Logos/Logo-Github.png" alt="GitHub">
           </a>
-          <a href="https://www.linkedin.com/in/thiogogambeta" target="_blank">
+          <a href="https://www.linkedin.com/in/thiogogambeta" style="text-decoration: none;" target="_blank">
             <img src="img/Logos/Logo-Linkedin.png" alt="LinkedIn">
           </a>
           <a href="https://www.instagram.com/thgambeta" target="_blank">
-            <img src="img/Logos/Logo-Instagram.png" alt="Instagram">
+            <img src="img/Logos/Logo-Instagram.png" style="text-decoration: none;" alt="Instagram">
           </a>
         </div>
       </div>
@@ -58,110 +61,115 @@
         </div>
         <script src="js/sobre.js"></script>
         <div class="quote">
-            <div id="projetos"></div>
-            <p>“A linguagem não define o programador. Sua lógica sim.”</p>
+          <div id="projetos"></div>
+          <p>“A linguagem não define o programador. Sua lógica sim.”</p>
           <cite>- Thiogo Gambeta</cite>
         </div>
       </div>
     </div>
-    
+
   </section>
 
-    <section class="projetos">
-    <div class="container">
-        <h2>Meus Projetos</h2>
-        <div class="slider-wrapper-projetos">
-            <button id="prev-btn" class="slider-btn">◀</button>
-            <div class="slider-projetos" id="repos-container">
-                <!-- Os repositórios do GitHub serão inseridos aqui pelo javascript -->
+  <section class="projetos" id="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid" id="repos-container">
+                </div>
             </div>
-            <button id="next-btn" class="slider-btn">▶</button>
+    </section>
+
+    <script src="public/js/script.js"></script> 
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração da animação em milissegundos
+            // SEM 'once: true' para que a animação REVERTA quando você rolar para cima!
+        });
+    </script>
+
+
+
+
+  <section class="linguagens">
+    <div class="container-linguagens" id="linguagens">
+      <h2>Linguagens que tenho Conhecimento</h2>
+      <div class="carrossel-linguagens">
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-Html5.png" alt="HTML5">
         </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-Css3.png" alt="CSS3">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-JavaScript.png" alt="JavaScript">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-Java.png" alt="PHP">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-MySql.png" alt="PHP">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-Php.png" alt="PHP">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-PostGree.png" alt="PHP">
+        </div>
+        <div class="slide-linguagens">
+          <img src="img/Logos/Logo-Python.png" alt="PHP">
+        </div>
+      </div>
     </div>
-    </section>
+  </section>
 
 
+  <section id="contato" class="contato">
+    <div class="container-contato" style="text-align: center;">
+      <h2>Contato</h2>
+      <p>Email: thiogogambeta@gmail.com</p>
+    </div>
+    <div class="botoes">
+      <button id="btn-contato">Entrar em contato</button>
 
-
-    <section class="linguagens">
-        <div class="container-linguagens" id="linguagens">
-            <h2>Linguagens que tenho Conhecimento</h2>
-            <div class="carrossel-linguagens">
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-Html5.png" alt="HTML5">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-Css3.png" alt="CSS3">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-JavaScript.png" alt="JavaScript">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-Java.png" alt="PHP">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-MySql.png" alt="PHP">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-Php.png" alt="PHP">
-                </div>
-                <div class="slide-linguagens">
-                    <img src="img/Logos/Logo-PostGree.png" alt="PHP">
-                </div>
-                <div class="slide-linguagens" >
-                    <img src="img/Logos/Logo-Python.png" alt="PHP">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="contato" class="contato" >
-        <div class="container-contato" style="text-align: center;">
-            <h2>Contato</h2>
-            <p>Email: thiogogambeta@gmail.com</p>
-        </div>
-        <div class="botoes">
-        <button id="btn-contato">Entrar em contato</button>
-        
-        <button onclick="baixarCurriculo()" class="btn-baixar">Baixar Curriculo</button>
-        <script>
+      <button onclick="baixarCurriculo()" class="btn-baixar">Baixar Curriculo</button>
+      <script>
         function baixarCurriculo() {
-        const link = document.createElement('a');
-        link.href = 'docs/Curriculo-Thiogo-Gambeta.pdf';
-        link.setAttribute('download', 'Curriculo-Thiogo-Gambeta.pdf');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+          const link = document.createElement('a');
+          link.href = 'docs/Currículo-Thiogo-Gambeta.pdf';
+          link.setAttribute('download', 'docs/Currículo-Thiogo-Gambeta.pdf');
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
         }
-  </script>
-  </div>
+      </script>
+    </div>
 
     <div id="modal-contato" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <form id="form-contato">
-            <input type="hidden" name="_captcha" value="false">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="form-contato">
+          <input type="hidden" name="_captcha" value="false">
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone">
 
-            <label for="email">Seu e-mail:</label>
-            <input type="email" id="email" name="email" required>
+          <label for="email">Seu e-mail:</label>
+          <input type="email" id="email" name="email" required>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-            <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
     </div>
 
-    </section>
-    <script src="js/contato.js"></script>
+  </section>
+  <script src="js/contato.js"></script>
 </body>
-</html>
 
+</html>
