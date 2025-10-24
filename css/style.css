@@ -97,6 +97,9 @@ body {
     align-items: center;
     text-align: center;
   }
+ .projeto-grid{
+    padding: 0 78px;
+  }
 
   .redes-sociais {
     justify-content: center;
@@ -253,4 +256,5 @@ body {
 }
 
 }
+
 
