@@ -14,7 +14,6 @@
 
 .typing-container {
   flex: 1 1 50%;
-  margin-left: -20%;
 }
 
 .typing-container h1 {
@@ -51,7 +50,6 @@
   flex: 1 1 40%;
   text-align: center;
   position: relative;
-  margin-right: -25%;
 }
 
 .foto {
@@ -77,3 +75,4 @@ cite {
   font-size: 14px;
   color: #999;
 }
+
