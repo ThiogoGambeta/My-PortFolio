@@ -23,7 +23,7 @@
     gap: 60px; 
     max-width: 1100px; /* Aumenta a largura máxima para dar espaço ao movimento lateral */
     margin: 0 auto; /* Mantém o container principal centralizado */
-    padding: 0 20px;
+    padding: 0 78px;
 }
 
 /* Estilo Base do Cartão de Projeto */
@@ -137,3 +137,4 @@
 }
 
 /*------------------------------------------------------------FIM PROJETOS - LAYOUT ALTERNADO (BLOCO LATERAL)------------------------------------------------------------*/
+
