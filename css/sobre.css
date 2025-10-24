@@ -17,13 +17,13 @@
 }
 
 .typing-container h1 {
-  font-size: 86px;
+  font-size: 46px;
   margin-bottom: 20px;
   color: #bd87ff;
 }
 
 .typing-container .fixed-text{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .typing {
@@ -75,4 +75,5 @@ cite {
   font-size: 14px;
   color: #999;
 }
+
 
