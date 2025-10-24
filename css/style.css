@@ -151,6 +151,10 @@ body {
     align-items: center;
   }
 
+
+.projetos{
+    margin-top:100%
+  }
   .card-projetos,
   .repo-card {
     min-width: 90%;
@@ -247,4 +251,5 @@ body {
 #next-btn {
   right: 5px;
 }
+
 }
