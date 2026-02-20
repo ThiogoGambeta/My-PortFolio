@@ -1,54 +1,111 @@
 .sobre {
-  padding: 80px 0;
+  padding: 20px 0;
+  background: #0f0f15;
 }
 
 .container-sobre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 90px auto;
   padding: 0 20px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.typing-container {
-  flex: 1 1 50%;
+/* TEXTO */
+
+.sobre-texto {
+  flex: 1 1 55%;
 }
 
-.typing-container h1 {
-  font-size: 46px;
-  margin-bottom: 20px;
+.tag {
+  display: inline-block;
+  background: #1b1b2a;
   color: #bd87ff;
+  padding: 6px 14px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.typing-container .fixed-text{
-  font-size: 16px;
+.sobre-texto h1 {
+  font-size: 42px;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  color: #ffffff;
 }
 
-.typing {
-  font-size: 18px;
-  line-height: 1.8;
-  min-height: 140px;
+.sobre-texto p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #bcbcc6;
+  margin-bottom: 20px;
 }
+
+/* BOTÕES */
+
+.botoes-sobre {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #bd87ff;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(189, 135, 255, 0.3);
+}
+
+.btn-secondary {
+  border: 1px solid #bd87ff;
+  color: #bd87ff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #bd87ff;
+  color: #000;
+}
+
+/* REDES */
 
 .redes-sociais {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-.redes-sociais a img {
-  width: 32px;
-  margin-right: 15px;
-  transition: transform 0.3s;
+.redes-sociais img {
+  width: 28px;
+  margin-right: 18px;
+  opacity: 0.7;
+  transition: 0.3s ease;
 }
 
-.redes-sociais a img:hover {
+.redes-sociais img:hover {
+  opacity: 1;
   transform: scale(1.1);
 }
 
+/* FOTO */
 .foto-wrapper {
+  margin-right: -20%;
   flex: 1 1 40%;
-  text-align: center;
+  text-align: right;
   position: relative;
 }
 
@@ -75,5 +132,3 @@ cite {
   font-size: 14px;
   color: #999;
 }
-
-
